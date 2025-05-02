@@ -1,0 +1,11 @@
+
+@font-face {
+    font-family: 'Man-bold';
+    font-weight: 700;
+    src: url(../fonts/Manrope-Regular.ttf);
+}
+@font-face {
+    font-family: 'Man';
+    font-weight: 400;
+    src: url(../fonts/Manrope-Regular.ttf);
+}

@@ -1,0 +1,135 @@
+@import 'font.css';
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: linear-gradient(#010208, #010206, #040008, #010101);
+}
+.container {
+    max-width: 1660px;
+    min-width: 320px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 35px 0;
+    border: 2px solid white;
+    border-radius: 50px;
+}
+.nav_li::after {
+    content: '';
+    height: 3px;
+    border-radius: 23px;
+    background: transparent;
+    width: 0;
+    margin-top: 5px;
+    transition: 0.5s;
+    margin-left: 40%;
+}
+
+.nav_li:hover::after {
+    background: #FFFF;
+    width: 15px;
+}
+
+.nav_li:hover {
+    color: #DF308D;
+}
+.nav_li{
+    font-family: 'Man';
+    color: #FFFF;
+    margin-right: 30px;
+    font-size: 18px;
+    transition: .5s;
+    display: flex;
+    flex-direction: column;
+    padding: 0 6px;
+}
+.nav_ul{
+    display: flex;
+    justify-content: center;
+}
+
+.nav_block{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav_logo{
+    color: #FFFF;
+    font-size: 24px;
+    font-family: 'Man';
+}
+.header_h1{
+    color: white;
+    font-family: 'Man-bold';
+    margin-bottom: 35px;
+    font-weight: 600;
+}
+.header_text{
+    color: white;
+    font-family: 'Man';
+    margin-bottom: 60px;
+    font-size: 20px;
+    max-width: 600px;
+    font-weight: 500;
+}
+.header_button{
+    color: black;
+    background: white;
+    padding: 15px 20px;
+    font-family: 'Man';
+    font-weight: 500;
+    border-radius: 25px;
+    background: -webkit-linear-gradient(45deg, #f64f59, #c471ed, #12c2e9);
+    background: linear-gradient(45deg, #f64f59, #c471ed, #12c2e9);
+    background-size: 200%;
+}
+.header_button:hover{
+    animation: gradient .5s ease forwards;
+}
+.header_button:not(:hover){
+    animation: gradient-end .5s ease forwards;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0 50%;
+    }
+    100% {
+        background-position: 100%;
+    }
+}
+@keyframes gradient-end {
+    0%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0%;
+    }
+}
+
+.header_block{
+    display: flex;
+    margin-top: 15%;
+}
