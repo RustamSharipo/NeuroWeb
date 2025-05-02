@@ -20,6 +20,7 @@ html {
 
 body {
     background: black;
+    height: 2000px;
 }
 .container {
     max-width: 1660px;
@@ -36,6 +37,7 @@ body {
     border: 2px solid white;
     border-radius: 50px;
     background: black;
+    z-index: 2;
 }
 .nav_li::after {
     content: '';
@@ -154,13 +156,13 @@ body {
 .header_img:hover{
     transform: scale(1.2);
     transition: .5s;
-    z-index: 1000;
+    z-index: 1;
 }
 .header_img_block{
     position: relative;
 }
 .main{
-    margin-top: 150px;
+    margin-top: 300px;
 }
 .main_title{
     font-size: 46px;
