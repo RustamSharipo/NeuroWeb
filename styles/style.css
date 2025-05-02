@@ -136,6 +136,29 @@ body {
     display: flex;
     margin-top: 15%;
 }
+.header_img{
+    width: 300px;
+    height: 400px;
+    position: absolute;
+    margin-left: 500px;
+    transition: .5s;
+}
+.header_img:nth-of-type(1){
+    margin-left: 400px;
+    transform: rotate(350deg);
+}
+.header_img:nth-of-type(2){
+    margin-left: 600px;
+    transform: rotate(10deg);
+}
+.header_img:hover{
+    transform: scale(1.2);
+    transition: .5s;
+    z-index: 1000;
+}
+.header_img_block{
+    position: relative;
+}
 .main{
     margin-top: 150px;
 }
