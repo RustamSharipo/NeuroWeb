@@ -1,15 +1,19 @@
+
 const arrow = document.getElementById('arrow');
-const imgBlock = document.getElementById('ImgBlock');
-
-    arrow.addEventListener('click', () => {
-      arrow.classList.toggle('rotated');
-});
 arrow.addEventListener('click', () => {
-  if (imgBlock.style.display === 'block') {
-    imgBlock.style.display = 'none';
-  } else {
-    imgBlock.style.display = 'block';
-  }
+  arrow.classList.toggle('rotated');
 });
-
-
+function toggleBlock(){
+  const imgBlock = document.getElementById('ImgBlock');
+  if (imgBlock.classList.contains('visible')) {
+    imgBlock.classList.remove('fade_in');
+    setTimeout(() => {
+      imgBlock.classList.remove('visible');
+    }, 500);
+  } else {
+    imgBlock.classList.add('visible');
+    setTimeout(() => {
+      imgBlock.classList.add('fade_in');
+    }, 10); 
+  }
+}
