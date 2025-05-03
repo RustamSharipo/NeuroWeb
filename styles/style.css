@@ -27,6 +27,9 @@ body {
     min-width: 320px;
     margin: 0 auto;
     padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 .nav{
     position: fixed;
@@ -139,13 +142,14 @@ body {
     margin-top: 15%;
 }
 .header_img{
-    width: 300px;
+    width: 350px;
     height: 400px;
     position: absolute;
     margin-left: 500px;
     transition: .5s;
 }
 .header_img:nth-of-type(1){
+    width: 300px;
     margin-left: 400px;
     transform: rotate(350deg);
 }
@@ -154,7 +158,7 @@ body {
     transform: rotate(10deg);
 }
 .header_img:hover{
-    transform: scale(1.2);
+    transform: scale(1.1);
     transition: .5s;
     z-index: 1;
 }
@@ -206,4 +210,18 @@ body {
 }
 .rotated {
     transform: rotate(180deg);
+}
+
+.main_examples_img{
+    width: 300px;
+    height: 400px;
+    margin: 10px;
+}
+.main_examples_block{
+    display: none;
+    text-align: center;
+    margin-top: 100px;
+}
+.proverka{
+    color: #FFFF;
 }
