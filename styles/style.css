@@ -234,7 +234,9 @@ body {
     margin-right: 15px;
     border: none;
 }
-
+.logo_create:nth-of-type(2){
+    margin-top: 100px;
+}
 .rotated {
     transform: rotate(180deg);
 }
@@ -252,12 +254,39 @@ body {
     transition: opacity 0.5s ease;
     overflow: hidden;
     margin-top: 100px;
-    margin-left: 20%;
+    margin-left: 10%;
     max-width: 1200px;
+    text-align: center;
 }
-.main_examples_block.visible{
+
+.main_examples_block.visible {
     display: block;
 }
-.main_examples_block.fade_in{
+
+.main_examples_block.fade_in {
     opacity: 1;
+}
+
+.order {
+    font-family: 'Man';
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+    border: 3px solid white;
+    border-radius: 25px;
+    background: black;
+    padding: 15px 30px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+.arrow2 {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid white;
+    color: #FFF;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    display: inline-block;
 }

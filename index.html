@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,46 +8,51 @@
   <link rel="stylesheet" href="styles/media.css">
   <title>NeuroWeb</title>
 </head>
+
 <body>
-    <nav class="nav">
-      <div class="container">
-        <div class="nav_block">
-          <a href="" class="nav_logo">NeuroWeb</a>
-          <ul class="nav_ul">
-            <li><a href="#header" class="nav_li">О нас</a></li>
-            <li><a href="" class="nav_li">Услуги</a></li>
-            <li><a href="" class="nav_li">Спец. пакеты</a></li>
-            <li><a href="" class="nav_li">Контакты</a></li>
-          </ul>
+  <nav class="nav">
+    <div class="container">
+      <div class="nav_block">
+        <a href="" class="nav_logo">NeuroWeb</a>
+        <ul class="nav_ul">
+          <li><a href="#header" class="nav_li">О нас</a></li>
+          <li><a href="" class="nav_li">Услуги</a></li>
+          <li><a href="" class="nav_li">Спец. пакеты</a></li>
+          <li><a href="" class="nav_li">Контакты</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <header class="header" id="header">
+    <div class="container">
+      <div class="header_block">
+        <div class="header_introduction">
+          <h1 class="header_h1">Технологии, которые работают на ваш успех</h1>
+          <p class="header_text">Уникальные нейрофотосессии, яркие логотипы и умные чат-боты для роста вашего бизнеса.
+          </p>
+          <a href="https://t.me/CSBOY68" class="header_button">Получить консультацию</a>
+        </div>
+        <div class="header_img_block">
+          <img src="img/1.png" alt="" class="header_img">
+          <img src="img/iex.png" alt="" class="header_img">
+          <img src="img/3.png" alt="" class="header_img">
         </div>
       </div>
-    </nav>
-    <header class="header" id="header">
+    </div>
+  </header>
+  <main class="main">
+    <section class="logo_create">
       <div class="container">
-        <div class="header_block">
-          <div class="header_introduction">
-            <h1 class="header_h1">Технологии, которые работают на ваш успех</h1>
-            <p class="header_text">Уникальные нейрофотосессии, яркие логотипы и умные чат-боты для роста вашего бизнеса.</p>
-            <a href="https://t.me/CSBOY68" class="header_button">Получить консультацию</a>
-          </div>
-          <div class="header_img_block">
-            <img src="img/1.png" alt="" class="header_img">
-            <img src="img/iex.png" alt="" class="header_img">
-            <img src="img/3.png" alt="" class="header_img">
-          </div>
+        <h2 class="main_title">Генерация логотипов, картинок</h2>
+        <p class="logo_p">Генерация ярких логотипов используется для привлечения внимания, формирования запоминающегося
+          образа бренда и повышения его узнаваемости, что способствует успешной продаже товаров или услуг, а генерация
+          фото послужит продолжению роста.</p>
+        <div class="examples_block">
+          <button class="logo_examples">Примеры</button>
+          <div class="arrow" id="arrow" onclick="toggleBlock()"></div>
         </div>
-      </div>
-    </header>
-    <main class="main">
-      <section class="logo_create">
-        <div class="container">
-          <h2 class="main_title">Генерация логотипов, картинок</h2>
-          <p class="logo_p">Генерация ярких логотипов используется для привлечения внимания, формирования запоминающегося образа бренда и повышения его узнаваемости, что способствует успешной продаже товаров или услуг, а генерация фото послужит продолжению роста.</p>
-          <div class="examples_block">
-            <button class="logo_examples">Примеры</button>
-            <div class="arrow" id="arrow" onclick="toggleBlock()"></div>
-          </div>
-          <div class="main_examples_block" id="ImgBlock">
+        <div class="main_examples_block" id="ImgBlock">
+          <div class="main_examples_block_2">
             <img src="img/2.png" alt="" class="main_examples_img">
             <img src="img/4.png" alt="" class="main_examples_img">
             <img src="img/5.png" alt="" class="main_examples_img">
@@ -54,12 +60,32 @@
             <img src="img/7.png" alt="" class="main_examples_img">
             <img src="img/8.png" alt="" class="main_examples_img">
           </div>
+          <button class="order" onclick="window.location.href='https://t.me/CSBOY68'">Заказать</button>
         </div>
-      </section>
-      <section class="neurophotosession_create">
-        
-      </section>
-    </main>
-    <script src="index.js"></script>
+      </div>
+    </section>
+    <section class="logo_create">
+      <div class="container">
+        <h2 class="main_title">Нейрофотосессия</h2>
+        <p class="logo_p">Нейрофотосессия — это больше, чем просто фотография. Это погружение в вашу уникальную
+          личность, раскрытие уверенности и эмоций, которые обычно скрыты от глаз. Мы не просто создаем красивые кадры —
+          мы фиксируем вашу настоящую суть, на которой строится ваш успех, стиль и харизма.</p>
+        <div class="examples_block">
+          <button class="logo_examples">Примеры</button>
+          <div class="arrow2" id="arrow2" onclick="toggleBlock2()"></div>
+        </div>
+        <div class="main_examples_block" id="ImgBlock2">
+          <img src="img/i1.png" alt="" class="main_examples_img">
+          <img src="img/i2.png" alt="" class="main_examples_img">
+          <img src="img/tim.jpg" alt="" class="main_examples_img">
+          <img src="img/rus.jpg" alt="" class="main_examples_img">
+          <img src="img/rus1.jpg" alt="" class="main_examples_img">
+          <img src="img/i5.png" alt="" class="main_examples_img">
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="index.js"></script>
 </body>
+
 </html>
