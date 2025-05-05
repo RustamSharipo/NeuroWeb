@@ -20,6 +20,7 @@ html {
 
 body {
     background: black;
+    height: 2000px;
 }
 
 .container {
@@ -160,11 +161,11 @@ body {
     height: 400px;
     position: absolute;
     margin-left: 500px;
+    object-fit: cover;
     transition: .5s;
 }
 
 .header_img:nth-of-type(1) {
-    width: 300px;
     margin-left: 400px;
     transform: rotate(350deg);
 }
@@ -242,6 +243,7 @@ body {
     width: 300px;
     height: 400px;
     margin: 10px;
+    object-fit: cover;
 }
 
 .main_examples_block {
