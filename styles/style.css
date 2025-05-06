@@ -38,7 +38,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 35px 0;
+    padding: 25px 0;
     border: 2px solid white;
     border-radius: 50px;
     background: black;
@@ -195,6 +195,12 @@ body {
     font-family: 'Man-bold';
     font-weight: 700;
     color: #FFFF;
+}
+.main_text_size{
+    max-width: 30%;
+}
+
+.main_text_size_2{
     text-align: center;
 }
 
@@ -202,10 +208,12 @@ body {
     font-size: 24px;
     font-family: 'Man';
     color: #FFFF;
-    text-align: center;
     margin-top: 40px;
 }
-
+.main_block_size{
+    display: flex;
+    justify-content: space-between;
+}
 .examples_block {
     display: flex;
     align-items: center;
@@ -280,6 +288,9 @@ body {
     margin-top: 30px;
     cursor: pointer;
 }
+.order:last-child{
+    width: 300px;
+}
 .arrow2 {
     width: 0;
     height: 0;
@@ -290,4 +301,20 @@ body {
     transition: transform 0.3s ease;
     cursor: pointer;
     display: inline-block;
+}
+.footer{
+    border-top: 2px solid white;
+    margin-top: 200px;
+    padding: 30px;
+    border-radius: 15px;
+}
+.footer_p_contacts{
+    color: #FFF;
+    font-size: 18px;
+    font-family: "Man";
+    font-weight: 500;
+}
+.footer_contacts{
+    display: flex;
+    justify-content: space-between;
 }
