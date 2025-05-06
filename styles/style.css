@@ -235,7 +235,7 @@ body {
     margin-right: 15px;
     border: none;
 }
-.logo_create:nth-of-type(2){
+.logo_create{
     margin-top: 100px;
 }
 .rotated {
