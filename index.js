@@ -1,3 +1,27 @@
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+    }
+  });
+}, {
+  threshold: 0.05
+});
+const introduction = document.querySelectorAll('.header_introduction');
+const header_img = document.querySelectorAll('.header_img');
+const main_text_size = document.querySelectorAll('.main_text_size');
+const examples_block = document.querySelectorAll('.examples_block');
+const tim = document.querySelectorAll('.tim');
+tim.forEach(t => observer.observe(t));
+examples_block.forEach(eb => observer.observe(eb));
+main_text_size.forEach(mts => observer.observe(mts));
+header_img.forEach(hi => observer.observe(hi));
+introduction.forEach(int => observer.observe(int));
+
+
+
+
+
 
 const arrow = document.getElementById('arrow');
 arrow.addEventListener('click', () => {
