@@ -54,3 +54,8 @@
         max-width: 700px;
     }
 }
+@media(max-width: 720px){
+    .container{
+        max-width: 600px;
+    }
+}
