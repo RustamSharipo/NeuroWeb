@@ -58,4 +58,11 @@
     .container{
         max-width: 600px;
     }
+    .nav_ul{
+        display: none;
+    }
+    .nav_block{
+        justify-content: center;
+    }
 }
+@media(max-width: 480px)
